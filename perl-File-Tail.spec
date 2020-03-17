@@ -4,7 +4,7 @@
 #
 Name     : perl-File-Tail
 Version  : 1.3
-Release  : 10
+Release  : 11
 URL      : https://cpan.metacpan.org/authors/id/M/MG/MGRABNAR/File-Tail-1.3.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MG/MGRABNAR/File-Tail-1.3.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libf/libfile-tail-perl/libfile-tail-perl_1.3-4.debian.tar.xz
@@ -78,7 +78,7 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-File-Tail
-cp %{_builddir}/File-Tail-1.3/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-File-Tail/ec68fd4ed1ea3b4efa782f60f3d4f06547348bd5
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-File-Tail/ec68fd4ed1ea3b4efa782f60f3d4f06547348bd5
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -102,4 +102,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/File/Tail.pm
+/usr/lib/perl5/vendor_perl/5.30.2/File/Tail.pm

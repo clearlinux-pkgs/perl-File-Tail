@@ -5,7 +5,7 @@
 #
 Name     : perl-File-Tail
 Version  : 1.3
-Release  : 21
+Release  : 22
 URL      : https://cpan.metacpan.org/authors/id/M/MG/MGRABNAR/File-Tail-1.3.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MG/MGRABNAR/File-Tail-1.3.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libf/libfile-tail-perl/libfile-tail-perl_1.3-4.debian.tar.xz
